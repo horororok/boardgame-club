@@ -162,7 +162,15 @@ export default function Landing() {
             언제든 환영합니다 🎉
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+            <button
+              className="bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              onClick={() => {
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLScewbSKObfxEjwzFM-RPtTRlbNm7brG3X65SUrB74B0je3lhA/viewform?usp=header",
+                  "_blank"
+                );
+              }}
+            >
               📧 가입 신청하기
             </button>
             <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300">
