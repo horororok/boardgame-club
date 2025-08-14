@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import useModal from "../hooks/useModal";
+import { ReadyModal } from "../components/landing/ReadyModal";
 
 export default function Landing() {
+  const { open, close } = useModal();
   return (
     <div className="bg-white dark:bg-gray-900">
       {/* Hero Section */}
@@ -20,12 +23,20 @@ export default function Landing() {
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Game<span className="text-yellow-400">Crew</span>
+            SSAG
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            보드게임과 방탈출의 짜릿한 세계로 초대합니다
+            보드게임에 관심 있는
             <br />
-            함께 즐기고, 함께 성장하는 게임 커뮤니티
+            누구나 환영합니다!
+            <br />
+            웃음 보장 싹 -
+            <br />
+            전략 ・ 추리 ・ 순발력 등
+            <br />
+            다양한 분야의 게임이
+            <br />
+            싹~~~ 모여있습니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -66,50 +77,50 @@ export default function Landing() {
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="text-6xl mb-6">🎲</div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                보드게임
+                보드게임 & 방탈출
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                전략적 사고와 재미를 동시에! 카탄, 스플렌더, 윙스팬 등 인기
-                보드게임부터 신작까지 다양하게 즐겨요.
+                전략적 사고와 재미를 동시에! 뱅, 스플렌더 등 인기 보드게임부터
+                신작까지 다양하게 즐겨요. 또한 서울 전지역의 방탈출 카페를
+                정복해 나가고 있어요.
               </p>
               <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-2">
-                <li>• 매주 화요일 정기모임</li>
-                <li>• 100여 종의 게임 보유</li>
+                <li>• 유연 보드게임제</li>
+                <li>• 월 2회 방탈출 투어</li>
                 <li>• 초보자 환영</li>
               </ul>
             </div>
 
-            {/* Escape Rooms */}
+            {/* Free Benefits */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="text-6xl mb-6">🔍</div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                방탈출
+                무료혜택
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                팀워크와 추리력이 필요한 짜릿한 모험! 서울 전지역의 방탈출
-                카페를 정복해 나가고 있어요.
+                삐뽀삐뽀! 외치면 흐린눈 해드립니다
+                <br />※ 최초 1회 한정
               </p>
               <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-2">
-                <li>• 월 2회 방탈출 투어</li>
-                <li>• 난이도별 추천 시스템</li>
-                <li>• 성공률 80% 달성</li>
+                <li>• 난방 ・ 낸방 완비, 쾌적한 환경 보장</li>
+                <li>• 생일자를 위한 축하송 서비스</li>
+                <li>• 게임 리뷰 & 추천</li>
               </ul>
             </div>
 
-            {/* Community */}
+            {/* 유료혜택 */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="text-6xl mb-6">👥</div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                커뮤니티
+                유료혜택
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                게임을 사랑하는 사람들이 모인 따뜻한 공간. 함께 웃고 즐기며 평생
-                친구를 만나보세요.
+                야무진 유료 혜택 !
               </p>
               <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-2">
-                <li>• 현재 45명의 활발한 멤버</li>
-                <li>• 정기 번개 모임</li>
-                <li>• 게임 리뷰 & 추천</li>
+                <li>• 시원한 음료 준비</li>
+                <li>• 떡볶이, 감튀, 팝콘 등</li>
+                <li>• 무한 간식 준비</li>
               </ul>
             </div>
           </div>
@@ -173,7 +184,17 @@ export default function Landing() {
             >
               📧 가입 신청하기
             </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300">
+            <button
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300"
+              onClick={() =>
+                open(
+                  <ReadyModal
+                    close={close}
+                    readyDescription="카카오톡 문의 기능은 준비 중이에요. 조금만 기다려 주세요!"
+                  />
+                )
+              }
+            >
               💬 카카오톡 문의
             </button>
           </div>

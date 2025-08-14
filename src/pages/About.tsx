@@ -6,7 +6,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              GameCrew를 소개합니다
+              SSAG 을 소개합니다
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               2022년부터 시작된 우리의 여정과 함께하는 멤버들, 그리고 앞으로의
@@ -26,10 +26,10 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-300">
                 <p>
-                  GameCrew는 2022년 보드게임을 사랑하는 몇 명의 친구들이 모여
-                  시작된 동아리입니다. 처음에는 작은 모임이었지만, 게임에 대한
-                  열정과 새로운 사람들과의 만남에 대한 즐거움이 더해져 현재
-                  45명의 활발한 멤버를 보유한 커뮤니티로 성장했습니다.
+                  SSAG은 2022년 보드게임을 사랑하는 몇 명의 친구들이 모여 시작된
+                  동아리입니다. 처음에는 작은 모임이었지만, 게임에 대한 열정과
+                  새로운 사람들과의 만남에 대한 즐거움이 더해져 현재 45명의
+                  활발한 멤버를 보유한 커뮤니티로 성장했습니다.
                 </p>
                 <p>
                   우리는 단순히 게임을 즐기는 것을 넘어서, 서로 다른 배경을 가진
@@ -251,17 +251,17 @@ export default function About() {
               운영진 소개
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              GameCrew를 이끌어가는 열정적인 운영진들
+              SSAG을 이끌어가는 열정적인 운영진들
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                김
+                오
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                김동아리 (회장)
+                오화석
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 "게임을 통해 만나는 새로운 세상과 사람들이 너무 좋아요!"
@@ -278,10 +278,10 @@ export default function About() {
 
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                박
+                김
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                박보드 (부회장)
+                김탈출
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 "방탈출의 짜릿함을 함께 나누고 싶어요!"
@@ -301,7 +301,7 @@ export default function About() {
                 이
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                이게임 (총무)
+                이보드
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 "모든 멤버가 편안하게 즐길 수 있는 환경을 만들어갑니다."
@@ -323,7 +323,7 @@ export default function About() {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            GameCrew와 함께하세요!
+            SSAG과 함께하세요!
           </h2>
           <p className="text-xl text-white/90 mb-8">
             나이, 성별, 경험에 상관없이 게임을 사랑하는 모든 분들을 환영합니다.

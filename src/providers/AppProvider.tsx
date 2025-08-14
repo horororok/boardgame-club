@@ -1,6 +1,11 @@
 import type { ReactNode } from "react";
 import ThemeProvider from "./ThemeProvider";
+import ModalProvider from "./ModalProvider";
 
 export default function AppProvider({ children }: { children: ReactNode }) {
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider>
+      <ModalProvider>{children}</ModalProvider>
+    </ThemeProvider>
+  );
 }

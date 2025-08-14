@@ -1,0 +1,17 @@
+
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 인스타그램 아이콘 (흑백) -->
+  <g transform="translate(20, 20)">
+    <!-- 외곽 사각형 -->
+    <rect x="0" y="0" width="60" height="60" rx="12" ry="12" fill="black"/>
+    
+    <!-- 내부 원 (카메라 렌즈) -->
+    <circle cx="30" cy="30" r="12" fill="none" stroke="white" stroke-width="3"/>
+    
+    <!-- 카메라 플래시 점 -->
+    <circle cx="45" cy="15" r="3" fill="white"/>
+    
+    <!-- 텍스트 레이블 -->
+    <text x="30" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Instagram</text>
+  </g>
+  </svg>
