@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">🎲</span>
+              <div className="w-8 h-8  rounded-lg flex items-center justify-center">
+                <img src="/images/logo-image.png" alt="SSAG" />
               </div>
               <span className="text-xl font-bold">SSAG</span>
             </div>

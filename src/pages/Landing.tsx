@@ -45,7 +45,15 @@ export default function Landing() {
             >
               동아리 알아보기
             </Link>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300 cursor-pointer">
+            <button
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300 cursor-pointer"
+              onClick={() => {
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLScewbSKObfxEjwzFM-RPtTRlbNm7brG3X65SUrB74B0je3lhA/viewform?usp=header",
+                  "_blank"
+                );
+              }}
+            >
               가입 문의하기
             </button>
           </div>
